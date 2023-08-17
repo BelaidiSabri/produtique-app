@@ -11,7 +11,17 @@ interface RefreshProps {
   SearchInput: string;
 }
 const ProductList: React.FC<RefreshProps> = (props) => {
-  const [products, setProducts] = useState<Product[]>([]);
+  const [products, setProducts] = useState<Product[]>([{
+    product_id: 28,
+    name: "clavier",
+    price: 30,
+    quantity: 10
+},{
+  product_id: 29,
+  name: "souris",
+  price: 20,
+  quantity: 10
+}]);
   const [filteredProducts, setFilteredProducts] = useState<Product[]>([]);
 
   useEffect(() => {
