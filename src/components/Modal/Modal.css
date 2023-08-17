@@ -1,0 +1,10 @@
+.addButton{
+    width: 20rem;
+    padding: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.custom-toast {
+    color: aliceblue;
+  }
