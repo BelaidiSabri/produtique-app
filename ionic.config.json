@@ -1,0 +1,7 @@
+{
+  "name": "produtique-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
