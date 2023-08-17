@@ -50,7 +50,6 @@ function Modal({ setRefresh }: ModalProps) {
 
     if (!productName || !productPrice || !productQuantity) {
       setBadgeText("Veuillez remplir tous les champs du produit");
-      setShowToast(true);
       return;
     }
     const formattedProduct: ProductSent = {
@@ -68,7 +67,6 @@ function Modal({ setRefresh }: ModalProps) {
       setRefresh((RefreshState) => !RefreshState);
     } catch (error) {
       setToastMessage("problem a ete servenu");
-      setShowToast(true);
     }
   }
   function onWillDismiss(ev: CustomEvent<OverlayEventDetail>) {
@@ -79,7 +77,6 @@ function Modal({ setRefresh }: ModalProps) {
 
       if (!productName || !productPrice || !productQuantity) {
         setToastMessage("Veuillez remplir tous les champs du produit");
-        setShowToast(true);
         ev.preventDefault();
       }
     }
